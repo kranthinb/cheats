@@ -1,0 +1,31 @@
+STEP 1:
+
+First of all we’ll need to extract the content of Windows 10 setup ISO file. You can extract it using 7-Zip. It’ll take some time in extracting the whole ISO file.
+
+STEP 2:
+
+Now open Notepad and copy/paste following piece of code in Notepad:
+
+[EditionID]
+Professional
+[Channel]
+Retail
+
+Create_EI_CFG_File_Windows_10.png
+
+You can also totally skip the [EditionID] part in the “ei.cfg” file so that Windows 10 setup asks you to choose desired edition at the time of clean installation:
+
+[Channel]
+Retail
+
+Now save the file with the name “ei.cfg” (use the double-quotes “” while saving the file otherwise Notepad will create a text file with the name ei.cfg.txt).
+
+STEP 3:
+
+Now copy the “ei.cfg” file and paste it into Sources folder of Windows 10 setup folder which you got after extracting ISO file using 7-Zip.
+
+Copy_EI_CFG_File_Windows_10_ISO.png
+
+STEP 4:
+
+Now you can create bootable USB drive or burn the files to a DVD and install Windows 10 Pro edition without any problem.
